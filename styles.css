@@ -7,6 +7,7 @@
 
 body {
     height: 100vh;
+    padding: 2.5rem 1rem;
 }
 
 /* || Colours */
@@ -16,6 +17,7 @@ body {
     --grey: #52525a;
     --white: #fff;
     --light-grey: #f3f4f6;
+    --box-shadow: #e0e0e0;
 }
 
 /* || Typography */
@@ -34,4 +36,74 @@ body {
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+}
+
+/* || Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-block-end: 1rem;
+}
+
+h1 {
+    font-family: "Be Vietnam Pro";
+    font-size: 2rem;
+    margin-block-end: 1rem;
+    text-align: center;
+    color: var(--black);
+}
+
+.header-text {
+    margin-block-end: 2.5rem;
+    text-align: center;
+    font-family: "Be Vietnam Pro";
+    color: var(--grey);
+    line-height: 150%;
+}
+
+/* || Card Grid */
+
+main {
+    margin-block-end: 5rem;
+}
+
+.card-container-grid {
+    display: grid;
+    background-color: var(--light-grey);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3rem 1.2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0rem 0.3rem 0.3rem var(--box-shadow);
+}
+
+h2 {
+    margin-block-end: 0.75rem;
+    font-family: "Be Vietnam Pro";
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+.card-text {
+    font-family: "Be Vietnam Pro";
+    color: var(--grey);
+    line-height: 150%;
+}
+
+.card-one-img-mobile,
+.card-two-img-mobile,
+.card-three-img-mobile,
+.card-four-img-mobile,
+.card-five-img-mobile {
+    margin-block-end: 1.5rem;
 }
